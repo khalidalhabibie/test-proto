@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option go_package ="./pb";
+
+// The greeting service definition.
+service ProductService {
+    // Sends a greeting
+    rpc SendProductName (ProductNameRequest) returns (ProductNameReply) {}
+
+}
+
+
+message ProductNameRequest {
+    int64 id = 1;
+}
+  
+message ProductNameReply {
+    string name = 1;    
+}
+
+
+message ProductRequest {
+  uint64 id = 1;
+}
+
