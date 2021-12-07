@@ -19,7 +19,4 @@ message ProductNameReply {
 }
 
 
-message ProductRequest {
-  uint64 id = 1;
-}
 
